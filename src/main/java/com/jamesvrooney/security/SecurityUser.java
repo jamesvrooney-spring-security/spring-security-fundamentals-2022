@@ -7,7 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Component
 @AllArgsConstructor
@@ -17,7 +18,13 @@ public class SecurityUser implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(() -> "read");
+        final Set<SecurityAuthority> authorities =
+                user.getAuthorities().stream()
+                .map(SecurityAuthority::new)
+                .collect(Collectors.toSet());
+
+//        return List.of(() -> "read");
+        return authorities;
     }
 
     @Override
