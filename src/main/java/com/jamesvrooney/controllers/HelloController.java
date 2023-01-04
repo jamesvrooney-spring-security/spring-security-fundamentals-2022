@@ -15,7 +15,7 @@ public class HelloController {
 
         log.info("Logged in user: {}", name);
 
-        final var greeting = "Hello " + name;
+        final var greeting = "Hello: " + name;
 
         return greeting;
     }
