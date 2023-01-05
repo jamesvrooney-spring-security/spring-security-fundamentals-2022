@@ -11,7 +11,7 @@ public class HelloController {
     @GetMapping("hello")
     public String hello() {
 
-        final var greeting = "Hello Lesson 04!";
+        final var greeting = "TEST: Hello Lesson 04!";
 
         return greeting;
     }
