@@ -11,11 +11,10 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello(Authentication authentication) {
-        final var name = authentication.getName();
 
-        log.info("Logged in user: {}", name);
+        log.info("Authentication: " + authentication.getName());
 
-        final var greeting = "Hello " + name;
+        final var greeting = "Hello Lesson 03!";
 
         return greeting;
     }
