@@ -1,6 +1,6 @@
 package com.jamesvrooney.security.filters;
 
-import com.jamesvrooney.security.authentication.CustomKeyAuthentication;
+import com.jamesvrooney.security.authentication.ApiKeyAuthentication;
 import com.jamesvrooney.security.managers.CustomAuthenticationManager;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -18,7 +18,7 @@ import java.io.IOException;
 @Component
 @AllArgsConstructor
 @Slf4j
-public class CustomAuthenticationFilter extends OncePerRequestFilter {
+public class ApiKeyFilter extends OncePerRequestFilter {
 
     private final CustomAuthenticationManager customAuthenticationManager;
 
@@ -28,7 +28,7 @@ public class CustomAuthenticationFilter extends OncePerRequestFilter {
                                     FilterChain filterChain) throws ServletException, IOException {
 
         var key = request.getHeader("x-api-key");
-        var ca = new CustomKeyAuthentication(false, key);
+        var ca = new ApiKeyAuthentication(false, key);
 
         Authentication authResult = customAuthenticationManager.authenticate(ca);
 

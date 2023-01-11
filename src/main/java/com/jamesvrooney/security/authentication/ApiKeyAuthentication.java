@@ -9,7 +9,7 @@ import java.util.Collection;
 
 @AllArgsConstructor
 @Getter
-public class CustomKeyAuthentication implements Authentication {
+public class ApiKeyAuthentication implements Authentication {
 
     private boolean isAuthenticated;
     private final String key;

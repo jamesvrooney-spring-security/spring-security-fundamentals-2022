@@ -1,6 +1,6 @@
 package com.jamesvrooney.security.providers;
 
-import com.jamesvrooney.security.authentication.CustomKeyAuthentication;
+import com.jamesvrooney.security.authentication.ApiKeyAuthentication;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -16,10 +16,10 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        var ca = (CustomKeyAuthentication) authentication;
+        var ca = (ApiKeyAuthentication) authentication;
 
         if (ca.getKey().equals(key)) {
-            return new CustomKeyAuthentication(true, null);
+            return new ApiKeyAuthentication(true, null);
         }
 
         throw new BadCredentialsException("Invalid credentials key");
@@ -27,6 +27,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public boolean supports(Class<?> authentication) {
-        return CustomKeyAuthentication.class.equals(authentication);
+        return ApiKeyAuthentication.class.equals(authentication);
     }
 }
