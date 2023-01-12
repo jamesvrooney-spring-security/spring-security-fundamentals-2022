@@ -18,3 +18,11 @@
 
 >**Use postgres cli (within the container):**  
 `psql -U postgres`
+
+
+## Query for OAuth2 access code
+`code_verifier:  MtrhkMEVqDsXVSzr4oJqW3kMFchRfgOIZ1TzjGsmIH4`
+
+`code_challenge:  If6bHFhC6sDG9crEksQAE4owI2zL0r2nz2ErFcFXmlU` 
+
+`localhost:8080/oauth2/authorize?response_type=code&client_id=client&scope=openid&redirect_uri=https://springone.io/authorized&code_challenge=If6bHFhC6sDG9crEksQAE4owI2zL0r2nz2ErFcFXmlU&code_challenge_method=S256`
