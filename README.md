@@ -3,10 +3,10 @@
 ## Course Details
 [Spring Security Fundamentals 2022 | YouTube](https://www.youtube.com/playlist?list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP)
 
-## Lesson 04: Multiple Authentication Providers
-[Lesson 04 Video - Multiple Authentication Providers](https://www.youtube.com/watch?v=asAUMpEcdXw&list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP&index=4)
+## Lesson 05: Endpoint authorization - Part 1
+[Lesson 05 Video - Endpoint authorization - Part 1](https://www.youtube.com/watch?v=asAUMpEcdXw&list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP&index=5)
 
-[Code for Lesson 04 on GitHub](https://github.com/lspil/youtubechannel/tree/master/ss_2022_c4_e1)
+[Code for Lesson 05 on GitHub](https://github.com/lspil/youtubechannel/tree/master/ss_2022_c5_e1)
 
 ## Docker Compose
 >**Run postgres in a docker container**  
