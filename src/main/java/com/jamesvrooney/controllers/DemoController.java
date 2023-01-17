@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-public class HelloController {
+public class DemoController {
 
-    @GetMapping("hello")
-    public String hello() {
+    @GetMapping("demo")
+    public String demo() {
 
-        final var greeting = "TEST: Hello Lesson 04!";
+        final var greeting = "TEST: Hello Lesson 05!";
 
         return greeting;
     }

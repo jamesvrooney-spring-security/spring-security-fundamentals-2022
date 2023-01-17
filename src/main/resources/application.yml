@@ -1,14 +1,22 @@
 spring:
   output.ansi.enabled: always
 
-#  datasource:
-#    url: jdbc:postgresql://localhost:5432/spring-security-fundamentals-2022
-#    username: postgres
-#    password: postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring-security-fundamentals-2022
+    username: postgres
+    password: postgres
+    jpa:
+      hibernate:
+#        ddl-auto: create-drop
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+      show-sql: true
 
-#  jpa:
-#    properties.hibernate:
-#      jdbc.lob.non_contextual_creation: true
-#      dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase.changeLog: classpath:db/changelog/master-changelog.xml
+
+logging.level.liquibase: INFO
 
 key: secret
