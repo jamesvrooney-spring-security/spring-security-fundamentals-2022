@@ -15,3 +15,12 @@ mvn spring-boot:build-image
 ## Docker Compose
 >**Run app in a docker container**  
 `docker compose up app -d`
+
+
+## Kubernetes Support
+- Run Minikube locally
+ 
+- [How to Run Locally Built Docker Images in Kubernetes](https://medium.com/swlh/how-to-run-locally-built-docker-images-in-kubernetes-b28fbc32cc1d)
+  - ``` eval $(minikube -p minikube docker-env) ```
+  - ``` mvn spring-boot:build-image ```
+  - ``` kubectrl apply -f k8s-local.yml ```
