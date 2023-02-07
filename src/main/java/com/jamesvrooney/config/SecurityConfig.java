@@ -17,7 +17,8 @@ public class SecurityConfig {
         return httpSecurity
                 .httpBasic()
                 .and()
-                .authorizeHttpRequests().anyRequest().authenticated()
+//                .authorizeHttpRequests().anyRequest().authenticated()
+                .authorizeHttpRequests().anyRequest().hasAuthority("write")
                 .and()
                 .build();
     }
