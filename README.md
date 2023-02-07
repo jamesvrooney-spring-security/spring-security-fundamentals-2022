@@ -3,10 +3,10 @@
 ## Course Details
 [Spring Security Fundamentals 2022 | YouTube](https://www.youtube.com/playlist?list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP)
 
-## Lesson 02: Managing Users
-[Lesson 02 Video - Managing Users](https://www.youtube.com/watch?v=asAUMpEcdXw&list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP&index=2)
+## Lesson 01: First steps
+[Lesson 01 Video - First Steps](https://www.youtube.com/watch?v=nSu9ElsnNtY&list=PLEocw3gLFc8X_a8hGWGaBnSkPFJmbb8QP)
 
-[Code for Lesson 02 on GitHub](https://github.com/lspil/youtubechannel/tree/master/ss_2022_c2_e1)
+[Code for Lesson 01 on GitHub](https://github.com/lspil/youtubechannel/tree/master/ss_2022_c1_e1)
 
 ## Docker Compose
 >**Run postgres in a docker container**  
