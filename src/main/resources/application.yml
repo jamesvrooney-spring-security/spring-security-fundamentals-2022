@@ -1,12 +1,18 @@
+server.port: 8080
+
 spring:
   output.ansi.enabled: always
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/spring-security-fundamentals-2022
-    username: postgres
-    password: postgres
+  security.user:
+      name: james
+      password: password
 
-  jpa:
-    properties.hibernate:
-#      jdbc.lob.non_contextual_creation: true
-      dialect: org.hibernate.dialect.PostgreSQLDialect
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/spring-security-fundamentals-2022
+#    username: postgres
+#    password: postgres
+#
+#  jpa:
+#    properties.hibernate:
+##      jdbc.lob.non_contextual_creation: true
+#      dialect: org.hibernate.dialect.PostgreSQLDialect

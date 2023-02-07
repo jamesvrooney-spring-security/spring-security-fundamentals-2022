@@ -8,13 +8,10 @@
 
 [Code for Lesson 01 on GitHub](https://github.com/lspil/youtubechannel/tree/master/ss_2022_c1_e1)
 
+## Build Image
+```
+mvn spring-boot:build-image
+```
 ## Docker Compose
->**Run postgres in a docker container**  
-`docker-compose up`  
-`docker-compose up db`
-
->**Exec into postgres container**  
-`docker exec -it jamesvrooney-postgres /bin/sh`
-
->**Use postgres cli (within the container):**  
-`psql -U postgres`
+>**Run app in a docker container**  
+`docker compose up app -d`

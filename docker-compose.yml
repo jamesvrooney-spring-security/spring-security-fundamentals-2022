@@ -1,15 +1,20 @@
 services:
-  db:
-    image: postgres:15.1
-    container_name: jamesvrooney-postgres
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+  app:
+    image: jamesvrooney/spring-security-fundamentals-2022-01:v0.0.1
+    container_name: spring-security-fundamentals-2022-lesson-01-app
     ports:
-      - '5432:5432'
-    volumes:
-      - db:/var/lib/postgresql/data
-volumes:
-  db:
-    driver: local
+      - 8080:8080
+#  db:
+#    image: postgres:15.1
+#    container_name: jamesvrooney-postgres
+#    restart: always
+#    environment:
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=postgres
+#    ports:
+#      - '5432:5432'
+#    volumes:
+#      - db:/var/lib/postgresql/data
+#volumes:
+#  db:
+#    driver: local
