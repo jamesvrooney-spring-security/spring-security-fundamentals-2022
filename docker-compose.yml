@@ -1,7 +1,7 @@
 services:
   app:
     image: jamesvrooney/spring-security-fundamentals-2022-01:v0.0.1
-    container_name: spring-security-fundamentals-2022-lesson-01-app
+    container_name: app
     ports:
       - 8080:8080
 #  db:
