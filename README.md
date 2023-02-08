@@ -27,3 +27,5 @@ mvn spring-boot:build-image
   - ``` kubectrl apply -f k8s-local.yml ```
 - ```minikube dashboard```
   - Let's you view your cluster in browser
+- ``` k exec -it webapp -- bash ```
+  - Let's you get a shell inside running pod
