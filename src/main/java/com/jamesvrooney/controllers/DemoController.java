@@ -10,7 +10,7 @@ public class DemoController {
 
     @GetMapping("demo")
     public String demo() {
-        log.info("This is a demo");
+        log.info("JAMES: This is a demo.");
 
         return "This is a demo";
     }
