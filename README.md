@@ -19,3 +19,6 @@ mvn spring-boot:build-image
 
 ## Kubernetes Support
 [Kubernetes support docs](./docs/k8s.md)
+
+## Database Support
+[Database support](./docs/db.md)
